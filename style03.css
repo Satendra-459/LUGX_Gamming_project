@@ -342,39 +342,30 @@ ul button {
     padding:15px;
 }
 
+.menu-icon{
+    display:none;
+}
+
 @media (max-width:768px){
 
     .menu-icon{
         display:block;
-        color:white;
         font-size:35px;
+        color:white;
         cursor:pointer;
-        position:absolute;
-        top:18px;
-        right:20px;
-        z-index:1001;
     }
 
     #menu{
-        display:none;      
+        display:none;   
         flex-direction:column;
-        width:100%;
-        background:#0071F8;
         position:absolute;
         top:70px;
         left:0;
-        padding:20px 0;
+        width:100%;
+        background:#0071F8;
     }
 
     #menu.show{
-        display:flex;     
+        display:flex;   
     }
-
-    #menu li{
-        text-align:center;
-        margin:15px 0;
-    }
-}
-.menu-icon{
-    display:none;
 }
