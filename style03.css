@@ -333,7 +333,7 @@ ul button {
         border-top-right-radius:60px;
     }
 }
-/* Menu Icon */
+
 .menu-icon{
     display:none;
     font-size:35px;
@@ -342,16 +342,21 @@ ul button {
     padding:15px;
 }
 
-/* Mobile */
-@media(max-width:768px){
+@media (max-width:768px){
 
     .menu-icon{
         display:block;
-        text-align:right;
+        color:white;
+        font-size:35px;
+        cursor:pointer;
+        position:absolute;
+        top:18px;
+        right:20px;
+        z-index:1001;
     }
 
     #menu{
-        display:none;
+        display:none;      
         flex-direction:column;
         width:100%;
         background:#0071F8;
@@ -362,12 +367,14 @@ ul button {
     }
 
     #menu.show{
-        display:flex;
+        display:flex;     
     }
 
     #menu li{
-        margin:15px 0;
         text-align:center;
+        margin:15px 0;
     }
-
+}
+.menu-icon{
+    display:none;
 }
