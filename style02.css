@@ -271,7 +271,7 @@ ul button {
         font-size: 22px;
     }
 
-    /* Footer */
+    
     .footer{
         height: auto;
         padding: 25px;
@@ -281,7 +281,7 @@ ul button {
         border-top-right-radius: 60px;
     }
 }
-/* Menu Icon */
+
 .menu-icon{
     display:none;
     font-size:35px;
@@ -290,39 +290,30 @@ ul button {
     padding:15px;
 }
 
+.menu-icon{
+    display:none;
+}
+
 @media (max-width:768px){
 
     .menu-icon{
         display:block;
-        color:white;
         font-size:35px;
+        color:white;
         cursor:pointer;
-        position:absolute;
-        top:18px;
-        right:20px;
-        z-index:1001;
     }
 
     #menu{
         display:none;   
         flex-direction:column;
-        width:100%;
-        background:#0071F8;
         position:absolute;
         top:70px;
         left:0;
-        padding:20px 0;
+        width:100%;
+        background:#0071F8;
     }
 
     #menu.show{
         display:flex;   
     }
-
-    #menu li{
-        text-align:center;
-        margin:15px 0;
-    }
-}
-.menu-icon{
-    display:none;
 }
