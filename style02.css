@@ -1,0 +1,325 @@
+ul{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.logo{
+    margin-right: auto;
+    font-size: 30px;
+}
+#navbar{ 
+    background-color:  #0071F8; 
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 25px;
+    height: 70px;
+} 
+a {
+    color: white;
+    text-decoration: none;
+}
+ul button {
+    background-color: orangered;
+    border-radius: 40%;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border: none;
+}
+ body{
+    margin: 0;
+} 
+#firststep{
+    width:100%;
+    height:500px;
+    background:#0071F8;
+    position:relative;
+}
+.banner-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.banner-text h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.banner-text p{
+    font-size: 22px;
+}
+#categoy{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 80px 0;
+    flex-wrap: wrap;
+}
+
+.button1{
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:#f1f1f1;
+    font-size:20px;
+    cursor:pointer;
+}
+#categoy .active{
+    background: #ff5e71;
+    color: white;
+}
+#categoy .button1:hover{
+    background: #ff5c6f;
+    color: white;
+}
+#gamecollection{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card{
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+.image img{
+    transition:.3s;
+}
+
+.image img:hover{
+    transform:scale(1.08);
+}
+.bag{
+    transition:.3s;
+}
+
+.bag:hover{
+    background:#0071F8;
+}
+.button1:hover{
+    background:#ff5b73;
+    color:white;
+}
+@media(max-width:768px){
+
+    #gamecollection{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+
+    ul{
+        flex-direction:column;
+    }
+
+}
+.bag{
+    width:50px;
+    height:50px;
+    background:#ff5b73;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:25px;
+}
+.content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+.price{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#007bff;
+    color:white;
+    padding:10px 15px;
+    border-radius:15px;
+    text-align:center;
+}
+.image img{
+    width:100%;
+    display:block;
+}
+.image{
+    position:relative;
+}
+.card{
+    width:320px;
+    background:#eeeeee;
+    border-radius:25px;
+    overflow:hidden;
+}
+.footer{
+    width: 100%;
+    height: 120px;
+
+    background: #0071F8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+
+    margin-top: 100px;
+
+    color: white;
+    font-size: 18px;
+}
+
+/* ===========================
+   Responsive (Mobile)
+=========================== */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    #navbar{
+        height: auto;
+        padding: 15px;
+        top: 0;
+        border-radius: 0;
+    }
+
+    ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo{
+        margin-right: 0;
+        font-size: 28px;
+    }
+
+    ul button{
+        width: 120px;
+        height: 45px;
+    }
+
+    /* Banner */
+    #firststep{
+        height: 350px;
+    }
+
+    .banner-text h1{
+        font-size: 30px;
+    }
+
+    .banner-text p{
+        font-size: 18px;
+    }
+
+    /* Category Buttons */
+    #categoy{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 40px 15px;
+    }
+
+    .button1{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* Game Cards */
+    #gamecollection{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin-top: 20px;
+    }
+
+    .card{
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .content h2{
+        font-size: 20px;
+    }
+
+    .content p{
+        font-size: 16px;
+    }
+
+    .bag{
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+
+    /* Footer */
+    .footer{
+        height: auto;
+        padding: 25px;
+        text-align: center;
+        font-size: 15px;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+    }
+}
+/* Menu Icon */
+.menu-icon{
+    display:none;
+    font-size:35px;
+    color:white;
+    cursor:pointer;
+    padding:15px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .menu-icon{
+        display:block;
+        text-align:right;
+    }
+
+    #menu{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        background:#0071F8;
+        position:absolute;
+        top:70px;
+        left:0;
+        padding:20px 0;
+    }
+
+    #menu.show{
+        display:flex;
+    }
+
+    #menu li{
+        margin:15px 0;
+        text-align:center;
+    }
+
+}
+
