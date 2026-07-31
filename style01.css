@@ -746,15 +746,21 @@ p{
 }
 
 /* Mobile */
-@media(max-width:768px){
+@media (max-width:768px){
 
     .menu-icon{
         display:block;
-        text-align:right;
+        color:white;
+        font-size:35px;
+        cursor:pointer;
+        position:absolute;
+        top:18px;
+        right:20px;
+        z-index:1001;
     }
 
     #menu{
-        display:none;
+        display:none;      /* By default hidden */
         flex-direction:column;
         width:100%;
         background:#0071F8;
@@ -765,12 +771,14 @@ p{
     }
 
     #menu.show{
-        display:flex;
+        display:flex;      /* Click karne par hi dikhega */
     }
 
     #menu li{
-        margin:15px 0;
         text-align:center;
+        margin:15px 0;
     }
-
+}
+.menu-icon{
+    display:none;
 }
